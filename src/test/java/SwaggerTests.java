@@ -15,7 +15,7 @@ public class SwaggerTests {
         System.out.println(petResponse);
     }
     @Test(description = "Получение питомца по Id")
-    public void getUserById() {
+    public void getPetById() {
         PetResponse petEx = new PetResponse(10, new Category(10, "sample string"),"doggie", new ArrayList<>(Arrays.asList("sample 1","sample 2","sample 3")), new Tag[]{new Tag(10, "sample string")},"available");
         PetResponse pet = STEPS.getPetById( 200);
         STEPS.checkResponse(pet, petEx);

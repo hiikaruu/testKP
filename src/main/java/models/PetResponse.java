@@ -1,7 +1,6 @@
 package models;
 
 import lombok.*;
-
 import java.util.ArrayList;
 
 @Data
@@ -16,5 +15,4 @@ public class PetResponse {
     private ArrayList<String> photoUrls;
     private Tag[] tags;
     private String status;
-
 }
